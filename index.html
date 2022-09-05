@@ -9,7 +9,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <header class="text-center">
+    <header class="text-center p-2 my-4">
         <h2>Save To LocalStorage</h2>
     </header>
 
@@ -18,19 +18,19 @@
             <div class="text-center">
                 <input type="text" name="" id="name-field" placeholder="Enter name">
                 <input type="text" name="" id="quantity-field" placeholder="Enter Quantity">
-                <button class="btn btn-primary d-block m-auto my-2">Add Product</button>
+                <button onclick="addProduct()" class="btn btn-primary d-block m-auto my-2">Add Product</button>
             </div>
         </section>
         <hr>
         <section class="container text-center">
             <div>
-                <h2>Saved Products</h2>
-                <ul id="product-container">
+                <h2 class="m-4 border-bottom">Saved Products</h2>
+                <ul id="product-container" class="list-unstyled shadow-lg bg-light">
 
                 </ul>
             </div>
         </section>
     </main>
-    <script src="./storage.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
